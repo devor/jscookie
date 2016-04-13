@@ -16,8 +16,8 @@ var jscookie = require('jscookie');
 ```javascript
 // Simple Session Cookie
 jscookie.set({
-	name   : 'the_cookie_name';
-	value  : 'cookie value';
+	name   : 'the_cookie_name',
+	value  : 'cookie value'
 });
 ```
 
@@ -26,11 +26,11 @@ or
 ```javascript
 // Advanced Options
 jscookie.set({
-	name   : 'the_cookie_name';
-	value  : 'cookie value';
+	name   : 'the_cookie_name',
+	value  : 'cookie value',
 	exdays : 5; 
-	path   : '/';
-	domain : 'http://thisdomain.com';
+	path   : '/',
+	domain : 'http://thisdomain.com'
 });
 ```
 Setting a cookie exdays to `false`, or ommitting the property, will create a session only cookie..
