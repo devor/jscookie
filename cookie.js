@@ -69,7 +69,7 @@ var cookie = {
 			// if this cookie matches the name we are trying to retreive - found it.
 			if (strCookie.indexOf(name) === 0) {
 				// get the value
-				string = strCookie.substring(name.length, c.length);
+				string = strCookie.substring(name.length, strCookie.length);
 
 				// If this is a string of an object, convert it to an object
 				if (string.split('&').length > 1) {
